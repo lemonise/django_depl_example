@@ -1,0 +1,21 @@
+{% extends "basic_app/base.html" %}
+{% load static %}
+{% block body_block%}
+
+<style media="screen">
+  img{
+    border: 2px solid black;
+  }
+
+  .jumbotron{
+    text-align: center;
+  }
+
+</style>
+  <div class="jumbotron">
+    <h1>This page is only for logged in users</h1>
+    <img src="{% static 'images/doggo.jpg' %}">
+  </div>
+
+
+{% endblock %}
